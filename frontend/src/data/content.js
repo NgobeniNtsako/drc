@@ -8,6 +8,7 @@ export const BRAND = {
   fax: "086 609 8086",
   email: "mbewuh@yahoo.com",
   address: "Stand no 1 R578 road, Hlaneki, Giyani 0826",
+  logo: "https://customer-assets.emergentagent.com/job_brand-website-demo/artifacts/won1qqhd_b7a9a4f2-8b4f-4fbb-b40c-03128f166db5.png",
 };
 
 export const MEDIA = {

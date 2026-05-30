@@ -32,7 +32,9 @@ export default function Nav() {
     >
       <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[68px] flex items-center justify-between">
         <a href="#top" data-testid="nav-logo" className="flex items-center gap-3 group">
-          <span className="logo-mark">D</span>
+          <span className="logo-img">
+            <img src={BRAND.logo} alt="DRC Plant Hire & Sand logo" />
+          </span>
           <span className="hidden sm:flex flex-col leading-tight">
             <span className="font-logo text-[15px] tracking-wider text-[#F4F7F5]">
               DRC PLANT HIRE

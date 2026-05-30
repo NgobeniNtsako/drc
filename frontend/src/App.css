@@ -54,6 +54,25 @@
     box-shadow: 0 0 0 1px var(--primary);
 }
 
+/* Logo image badge (white background so the original artwork reads cleanly on dark theme) */
+.logo-img {
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    box-shadow: 0 0 0 1px rgba(255, 184, 28, 0.25);
+    flex-shrink: 0;
+}
+.logo-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 4px;
+}
+
 /* Pricing row hover */
 .price-row {
     transition: background-color 0.2s ease-out, color 0.2s ease-out;

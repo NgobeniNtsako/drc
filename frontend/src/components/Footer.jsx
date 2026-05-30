@@ -8,7 +8,9 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-14 grid md:grid-cols-[1.4fr_1fr_1fr] gap-10">
         <div>
           <div className="flex items-center gap-3">
-            <span className="logo-mark">D</span>
+            <span className="logo-img">
+              <img src={BRAND.logo} alt="DRC Plant Hire & Sand logo" />
+            </span>
             <span className="font-logo text-[16px] tracking-wider text-[#F4F7F5]">
               DRC PLANT HIRE &amp; SAND
             </span>
