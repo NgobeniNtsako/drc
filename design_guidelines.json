@@ -1,0 +1,104 @@
+{
+  "theme": "Dark",
+  "archetype": "5 (Luxury / Premium) hybridized with Industrial Brutalism",
+  "mood": "Cinematic, Monumental, Trustworthy, Rugged yet Premium, Heavyweight",
+  "color_palette": {
+    "background": "#06130C",
+    "surface": "#0C2317",
+    "surface_hover": "#123020",
+    "border": "#193E2A",
+    "primary": "#FFB81C",
+    "primary_hover": "#FFC547",
+    "primary_foreground": "#06130C",
+    "text_main": "#F4F7F5",
+    "text_muted": "#8EA698"
+  },
+  "typography": {
+    "headings_font": "Clash Display",
+    "body_font": "Manrope",
+    "logo_font": "Anton",
+    "rules": [
+      "Headings must be tracking-tight (tracking-tighter) to feel heavy and grounded.",
+      "Overlines must be tracking-[0.2em] and uppercase.",
+      "No Inter or generic fonts for headings.",
+      "Max hero heading size text-5xl to text-6xl (clamp via tailwind fluid if possible, or responsive classes like text-4xl md:text-5xl lg:text-6xl).",
+      "Hierarchy Gap Rule: Ensure contrast between headings and body text is bold."
+    ]
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "Use generous padding: py-20, py-24, or py-32 for vertical sections.",
+    "grid_system": "Use bento grid styles (Mode A: The Tetris Grid) for the fleet and services. Avoid standard equal columns. Use col-span-2 or col-span-3 for emphasis to create visual tension.",
+    "surface_styles": "Flat, solid colors. 1px borders. Sharp edges or very subtle rounded-sm. NO heavy glassmorphism for content cards (it feels too 'tech SaaS'), use solid blocks for industrial feel. Glassmorphism allowed ONLY on sticky header."
+  },
+  "pages_and_sections": [
+    {
+      "name": "Navigation (Sticky)",
+      "content": "Logo (DRC Plant Hire), Links (About, Fleet, Sand, Pricing, Contact), CTA (Get Quote).",
+      "design": "Backdrop blur (Crystal Glass) over dark background. border-b border-[#193E2A]. z-50 fixed at top."
+    },
+    {
+      "name": "Hero",
+      "content": "Tagline: 'Together, we build the future.', Title: 'Heavy Machinery & Sand Supply for the Modern Builder', CTA: 'Get a Quote', secondary CTA: 'View Fleet'.",
+      "design": "Full-screen or 90vh cinematic image with gradient overlay from bottom to top (bg-gradient-to-t from-[#06130C] via-[#06130C]/80 to-transparent). Content anchored to bottom-left."
+    },
+    {
+      "name": "About",
+      "content": "'Reliable Machines. Trusted Service. Together we build the future.'",
+      "design": "Large typography section. Text-4xl Clash Display. High contrast, using text_main and primary color for emphasis words."
+    },
+    {
+      "name": "Fleet & Services",
+      "content": "Showcase of TLB, Excavator, Tipper Truck, Bobcat/Skid Steer. Also Sand products (Riversand, Building Sand, Filling Sand).",
+      "design": "Bento Grid (Mode A). Heavy cards with machinery images. Sand image gets a prominent 2-column span block. Hovering over cards slightly scales image and brightens border."
+    },
+    {
+      "name": "Why Choose Us",
+      "content": "3 trust pillars: Reliable Machines/Strong Performance, Trusted Service/Local Commitment, Together We Build The Future.",
+      "design": "Grid with 3 columns. Use Lucide icons. Large numbers (01, 02, 03) in background."
+    },
+    {
+      "name": "Pricing",
+      "content": "Pricing table per delivery area: Hlaneki-A R1100, Babangu/Gonono R1200, Mavhuza/Ndhengeza R1200, Maxavele/Nwa-Makena/Navelani/Dzingidzingi/Bode R1200, Mapuve Nkuri R1200.",
+      "design": "Technical, tabular layout. Clean lines (Grid Borders style). Row hover effects. Emphasize price."
+    },
+    {
+      "name": "Contact & Quote",
+      "content": "Request Quote form (name, phone, email, service, location, message). Contact info: Tel 069 157 6873, Cell 084 986 3991, Email mbewuh@yahoo.com, Address: Stand no 1 R578 road, Hlaneki Giyani 0826. Map.",
+      "design": "Split layout: Left side contact details + embedded map, Right side heavy form using Shadcn components customized to brand colors."
+    }
+  ],
+  "media_urls": {
+    "hero_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/99031919-dbb8-4612-92e2-5cb2ea82456c/images/b8b5a28847cd3a88513a29a8b6ea716705783350c5903432160452895f2fb350.png",
+      "description": "Cinematic heavy machinery hero background"
+    },
+    "sand_macro": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/99031919-dbb8-4612-92e2-5cb2ea82456c/images/61aface5dde276efde2b309a3b1d42341d1008856f0e6d4de45d31b933a11fc4.png",
+      "description": "Macro building sand"
+    },
+    "tlb_backhoe": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/99031919-dbb8-4612-92e2-5cb2ea82456c/images/affe08099491a4583fcb8436ce24c34bce97c3ddb0e51d18b9fc74f27f8eb9e5.png",
+      "description": "TLB backhoe loader"
+    },
+    "excavator": {
+      "url": "https://images.unsplash.com/photo-1580901369227-308f6f40bdeb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwzfHx5ZWxsb3clMjBleGNhdmF0b3IlMjBjb25zdHJ1Y3Rpb258ZW58MHx8fHwxNzgwMTU1Mjk2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Yellow excavator"
+    },
+    "tipper_truck": {
+      "url": "https://images.unsplash.com/photo-1629807472592-2649bfa09f9c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxkdW1wJTIwdHJ1Y2slMjBjb25zdHJ1Y3Rpb258ZW58MHx8fHwxNzgwMTU1Mjk2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Tipper truck"
+    },
+    "skid_steer": {
+      "url": "https://images.unsplash.com/photo-1630628535113-e1cc025c8c34?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxza2lkJTIwc3RlZXIlMjBsb2FkZXJ8ZW58MHx8fHwxNzgwMTU1Mjk2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Bobcat / Skid steer loader"
+    }
+  },
+  "instructions_to_main_agent": {
+    "file_extensions": "CRITICAL: Build the application using .js or .jsx files, NOT .tsx files.",
+    "components": "Use custom HTML/Tailwind for marketing-heavy sections (Hero, Bento Grid) to allow extreme layouts. Use Shadcn components for complex logic (Contact Form, Select, Dropdown).",
+    "animations": "Use framer-motion for staggering lists and scroll reveals. No bouncy springs; use ease-out for heavy industrial feel.",
+    "testing": "All interactive elements MUST have data-testid attributes.",
+    "ui_libraries": "Install and use lucide-react for icons. Install framer-motion for animations.",
+    "styling": "Do not wrap this JSON file in markdown. Strict dark theme application required across all elements."
+  }
+}
